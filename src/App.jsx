@@ -3,7 +3,7 @@ import { Dashboard, Auth } from "@/layouts";
 
 function App() {
   return (
-    <Routes>
+    <Routes basename="/dashboard/*">
       <Route path="/dashboard/*" element={<Dashboard />} />
       <Route path="/auth/*" element={<Auth />} />
       <Route path="*" element={<Navigate to="/dashboard/home" replace />} />
