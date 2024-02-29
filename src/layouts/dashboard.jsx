@@ -14,11 +14,15 @@ export function Dashboard() {
   const [controller, dispatch] = useMaterialTailwindController();
   const { sidenavType } = controller;
 
+  console.log('path: ', import.meta.env.VITE_APP_ASSET_PATH);
+
   return (
     <div className="min-h-screen bg-blue-gray-50/50">
       <Sidenav
         routes={routes}
-        brandImg={`./img/logo/trofeosABM.png`}
+        brandImg={`${import.meta.env.VITE_APP_ASSET_PATH}img/logo/trofeosABM.png`}
+
+        // brandImg={`${process.env.REACT_APP_ASSET_PATH}img/logo/trofeosABM.png`}
       />
       <div className="p-4 xl:ml-80">
         <DashboardNavbar />
