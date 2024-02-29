@@ -7,6 +7,9 @@ import {
   IconButton,
   Typography,
 } from "@material-tailwind/react";
+import {
+  XCircleIcon
+} from "@heroicons/react/24/solid";
 import { useMaterialTailwindController, setOpenSidenav } from "@/context";
 
 export function Sidenav({ brandImg, brandName, routes }) {
@@ -39,13 +42,13 @@ export function Sidenav({ brandImg, brandName, routes }) {
         </Link>
         <IconButton
           variant="text"
-          color="white"
           size="sm"
           ripple={false}
           className="absolute right-0 top-0 grid rounded-br-none rounded-tl-none xl:hidden"
           onClick={() => setOpenSidenav(dispatch, false)}
         >
-          <XMarkIcon strokeWidth={2.5} className="h-5 w-5 text-white" />
+          <XCircleIcon strokeWidth={2.5} className="h-5 w-5 tex-black" />
+          {/* <XMarkIcon strokeWidth={2.5} className="h-5 w-5 tex-black" /> */}
         </IconButton>
       </div>
       <div className="m-4">
@@ -98,7 +101,7 @@ export function Sidenav({ brandImg, brandName, routes }) {
 }
 
 Sidenav.defaultProps = {
-  brandImg: "/img/trofeosABM.png",
+  brandImg: "/img/logo/trofeosABM.png",
   brandName: "Éxitos que inspiran",
 };
 

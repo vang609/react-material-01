@@ -19,8 +19,10 @@ export function Dashboard() {
       <Sidenav
         routes={routes}
         brandImg={
-          sidenavType === "dark" ? "/img/trofeosABM.png" : "/img/logo/trofeosABM.png"
-        }
+  sidenavType === "dark"
+    ? `/img/trofeosABM.png`
+    : `/img/logo/trofeosABM.png`
+}
       />
       <div className="p-4 xl:ml-80">
         <DashboardNavbar />

@@ -4,7 +4,7 @@ import {
   ChatBubbleLeftEllipsisIcon,
   ServerStackIcon,
   RectangleStackIcon,
-  BuildingStorefrontIcon
+  BuildingStorefrontIcon,
 } from "@heroicons/react/24/solid";
 import { Home, Profile, About, Notifications } from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
